@@ -1,0 +1,28 @@
+version: "3.1"
+
+rules:
+
+- rule: max_student
+  steps:
+  - intent: max_student
+  - action: action_get_max_student
+
+- rule: min_student
+  steps:
+  - intent: min_student
+  - action: action_get_min_student
+
+- rule: get_name_marks
+  steps:
+  - intent: get_name_marks
+  - action: action_get_name_marks  
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot

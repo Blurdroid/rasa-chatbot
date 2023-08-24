@@ -1,0 +1,44 @@
+version: "3.1"
+
+stories:
+- story: max_student
+  steps:
+  - intent: max_student
+  - action: action_get_max_student
+
+- story: min_student
+  steps:
+  - intent: min_student
+  - action: action_get_min_student
+
+- story: get_name_marks
+  steps:
+  - intent: get_name_marks
+  - action: action_get_getmarks
+  
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
