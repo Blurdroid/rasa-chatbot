@@ -14,6 +14,9 @@ nlu:
 - intent: get_name_marks #sqlite3
   examples: |
     - what is the total marks of [ziad](name)?
+    - what is the total marks of [mohamed](name)?
+    - what is the total marks of [salma](name)?
+    - what is the total marks of [omar](name)?
     - what is the marks of [mohamed](name)?
     - what is [salma](name)'s marks?
     - i want to know the marks of [omar](name)

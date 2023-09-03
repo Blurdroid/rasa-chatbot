@@ -14,7 +14,7 @@ stories:
 - story: get_name_marks
   steps:
   - intent: get_name_marks
-  - action: action_get_getmarks
+  - action: action_get_name_marks
   
 - story: happy path
   steps:
