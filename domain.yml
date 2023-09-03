@@ -14,23 +14,23 @@ intents:
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "اهلا اخبارك ايه النهارده؟"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
     image: "https://i.imgur.com/nGF1K8f.jpg"
 
   utter_did_that_help:
-  - text: "Did that help you?"
+  - text: "ساعدتك؟"
 
   utter_happy:
-  - text: "Great, carry on!"
+  - text: "عظيم"
 
   utter_goodbye:
-  - text: "Bye"
+  - text: "سلام"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "انا بوت "
 
 entities:
   - name
